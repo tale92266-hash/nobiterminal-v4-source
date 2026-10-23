@@ -11,12 +11,6 @@ android {
         minSdkVersion project.properties.minSdkVersion.toInteger()
         targetSdkVersion project.properties.targetSdkVersion.toInteger()
 
-        externalNativeBuild {
-            ndkBuild {
-                cFlags "-std=c11", "-Wall", "-Wextra", "-Werror", "-Os", "-fno-stack-protector", "-Wl,--gc-sections"
-            }
-        }
-
         ndk {
             abiFilters 'x86', 'x86_64', 'armeabi-v7a', 'arm64-v8a'
         }
@@ -29,11 +23,8 @@ android {
         }
     }
 
-    externalNativeBuild {
-        ndkBuild {
-            path "src/main/jni/Android.mk"
-        }
-    }
+    // Native code is prebuilt on this branch (src/main/jniLibs); the ndkBuild
+    // sources (src/main/jni) and externalNativeBuild config live on main.
 
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
