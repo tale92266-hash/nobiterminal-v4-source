@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="nobi_theme_entries">
+        <item>Nobi Neon</item>
+        <item>Dracula</item>
+        <item>Matrix</item>
+        <item>Solarized Dark</item>
+        <item>One Dark</item>
+        <item>Midnight Purple</item>
+        <item>Default</item>
+    </string-array>
+
+    <string-array name="nobi_theme_entry_values">
+        <item>nobi_neon</item>
+        <item>dracula</item>
+        <item>matrix</item>
+        <item>solarized_dark</item>
+        <item>one_dark</item>
+        <item>midnight_purple</item>
+        <item>default</item>
+    </string-array>
+
+    <string-array name="nobi_extra_keys_preset_entries">
+        <item>Default</item>
+        <item>Developer</item>
+        <item>Minimal</item>
+        <item>Off</item>
+        <item>Custom</item>
+    </string-array>
+
+    <string-array name="nobi_extra_keys_preset_entry_values">
+        <item>default</item>
+        <item>developer</item>
+        <item>minimal</item>
+        <item>off</item>
+        <item>custom</item>
+    </string-array>
+
+</resources>
